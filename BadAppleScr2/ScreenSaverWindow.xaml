@@ -3,12 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Bad Apple!!" Loaded="ScreenSaverWindow_Loaded"
         WindowStyle="None" AllowsTransparency="true" Background="#01000000"
-        Icon="1302996309_Computer.ico" ShowInTaskbar="False" Topmost="True">
-    <Grid>
-        <MediaElement Name="VideoElement" LoadedBehavior="Play"
-                      MediaEnded="VideoElement_MediaEnded"
-                      MediaOpened="VideoElement_MediaOpened"
-                      MediaFailed="VideoElement_MediaFailed"/>
+        Icon="1302996309_Computer.ico" ShowInTaskbar="False" Topmost="True" KeyDown="ScreenSaverWindow_KeyDown" MouseDown="ScreenSaverWindow_MouseDown" MouseMove="ScreenSaverWindow_MouseMove" Unloaded="ScreenSaverWindow_Unloaded" Foreground="#01000000">
+    <Grid Name="grid1">
+        <Image Name="DesktopBackground" Opacity="100" />
+        <Rectangle Name="VideoBlock"/>
         <TextBlock Name="WarningMessage" Visibility="Hidden"
                    Background="Black" Foreground="Red"
                    FontFamily="Segoe UI" FontSize="36" FontWeight="Bold"

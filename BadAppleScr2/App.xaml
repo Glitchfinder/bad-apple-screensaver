@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Startup="BadAppleScr2_Startup">
     <Application.Resources>
-        
+        <VisualBrush x:Key="Media">
+        </VisualBrush>
     </Application.Resources>
 </Application>
